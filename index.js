@@ -37,21 +37,12 @@ document.getElementById("tinhChuVi").onclick = function () {
 };
 
 //Bài 5
-document.getElementById("tongKy1").onclick = function () {
-  var kySo1 = document.getElementById("kySo1").value * 1;
-  var hangDonVi1 = kySo1 % 10;
-  var hangChuc1 = Math.floor(kySo1 / 10);
-  var tongKy1 = hangDonVi1 + hangChuc1;
-  console.log(alert("Số hàng đơn vị là: " + hangDonVi1));
-  console.log(alert("Số hàng chục là: " + hangChuc1));
-  console.log(alert("Tổng số ký 1 là: " + tongKy1));
-};
-document.getElementById("tongKy2").onclick = function () {
-  var kySo2 = document.getElementById("kySo2").value * 1;
-  var hangDonVi2 = kySo2 % 10;
-  var hangChuc2 = Math.floor(kySo2 / 10);
-  var tongKy2 = hangDonVi2 + hangChuc2;
-  console.log(alert("Số hàng đơn vị là: " + hangDonVi2));
-  console.log(alert("Số hàng chục là: " + hangChuc2));
-  console.log(alert("Tổng số ký 2 là: " + tongKy2));
+document.getElementById("tongKy").onclick = function () {
+  var kySo = document.getElementById("kySo").value * 1;
+  var hangDonVi = kySo % 10;
+  var hangChuc = Math.floor(kySo / 10);
+  var tongKy = hangDonVi + hangChuc;
+  console.log(alert("Số hàng đơn vị là: " + hangDonVi));
+  console.log(alert("Số hàng chục là: " + hangChuc));
+  console.log(alert("Tổng ký là: " + tongKy));
 };
